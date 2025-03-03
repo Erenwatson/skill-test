@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.85.1"
+  }
+}
