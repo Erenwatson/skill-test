@@ -38,12 +38,8 @@ export const useTaskData = defineStore('task_data', {
   },
   actions: {
     completeTask(){
-      console.log('complete task in store')
       const filterComplete = this.lists.filter(list => list.status == 'completed')
-      console.log('filterComplete', filterComplete)
-      // this.completed.push(filterComplete)
       this.completed = filterComplete
-      console.log('this.completed', this.completed)
     }
   }
 })

@@ -2,7 +2,6 @@
 import {useTaskData} from '@/stores/stores.js'
 import { RouterLink } from 'vue-router'
 const {lists, completeTask, completed} = useTaskData()
-console.log(':::completed', completed)
 
 
 </script>
@@ -29,21 +28,6 @@ console.log(':::completed', completed)
       </div>
     </div>
   </div>
-  <!-- <div class="complete-task-container">
-    <div class="complete-task-box-transparent">
-      <div class="btn-container">
-        <button class="all-task-btn">
-          <router-link :to="'/'">All Tasks</router-link>
-        </button>
-      </div>
-      <div class="task-lists" v-for="list in completed" :key="list.id">
-        <div class="__list">
-          <p :class="{'_done' : list.status == 'completed'}">Title: {{ list.taskTitle }}</p>
-          <p :class="{'_completed' : list.status == 'completed', '_pending': list.status == 'pending'}">{{ list.status }}</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 
